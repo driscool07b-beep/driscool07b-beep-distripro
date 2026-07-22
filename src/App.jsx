@@ -1,3 +1,4 @@
+import Tournees from './pages/Tournees';
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -31,3 +32,4 @@ export default function App() {
     </Routes>
   )
 }
+<Route path="/tournees" element={<ProtectedRoute><Tournees /></ProtectedRoute>} />
